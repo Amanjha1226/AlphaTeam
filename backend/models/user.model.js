@@ -48,7 +48,7 @@ const userSchema = new mongoose.Schema({
      return await bcrypt.compare(password,this.password)
    }
     userSchema.methods.generateAuthToken = async function() {
-    const token = jwt.sign({_id: this._id},process.env.JWT_SECRET, { expiresIn: '1h' });
+    const token = jwt.sign({_id: this._id},process.env.JWT_SECRET, { expiresIn: '15d' });
     return token;
   }
   

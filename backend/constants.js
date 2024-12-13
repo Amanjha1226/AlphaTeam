@@ -1,1 +1,1 @@
-module.exports.DB_NAME = 'matchmaking_db';
+module.exports.DB_NAME = 'match_db';
